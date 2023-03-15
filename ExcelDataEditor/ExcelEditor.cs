@@ -41,7 +41,6 @@ namespace ExcelDataEditor
         }
         public static void Editfile(string path)
         {
-            string filename = path;
             try
             {
                 application = new Application();
@@ -51,8 +50,10 @@ namespace ExcelDataEditor
 
                 Range r1 = worksheet.Cells[10, 1];
                 r1.Value = DateTime.Now.ToString();
+                Range r2 = worksheet.Range["A1", "F5"];
+                worksheet.Copy(r2, worksheet.Cells[11, 1]);
 
-                workbook.SaveAs(filename);
+                workbook.Save();
             }
             catch (Exception ex)
             {

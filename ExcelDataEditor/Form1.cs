@@ -61,5 +61,10 @@ namespace ExcelDataEditor
             else
                 e.Effect = DragDropEffects.None;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ExcelEditor.Editfile(pathEdit.Text);
+        }
     }
 }
