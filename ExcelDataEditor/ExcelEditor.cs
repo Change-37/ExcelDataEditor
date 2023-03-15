@@ -51,13 +51,14 @@ namespace ExcelDataEditor
                 Range r1 = worksheet.Cells[10, 1];
                 r1.Value = DateTime.Now.ToString();
                 Range r2 = worksheet.Range["A1", "F5"];
-                worksheet.Copy(r2, worksheet.Cells[11, 1]);
+                worksheet.Range["A11", "F15"].Value = r2.Value; // 복사 붙여넣기
 
                 workbook.Save();
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
+                throw ex;
             }
             finally
             {
