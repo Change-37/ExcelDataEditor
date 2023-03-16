@@ -50,8 +50,9 @@ namespace ExcelDataEditor
 
                 Range r1 = worksheet.Cells[10, 1];
                 r1.Value = DateTime.Now.ToString();
-                Range r2 = worksheet.Range["A1", "F5"];
-                worksheet.Range["A11", "F15"].Value = r2.Value; // 복사 붙여넣기
+                Range r2 = worksheet.Range["A11", "F15"];
+                worksheet.Range["A12", "F16"].Value = r2.Value; // 복사 붙여넣기
+                worksheet.Range["A11", "F11"].Clear(); // 더 좋은 옮기기 방법이 없을까?
 
                 workbook.Save();
             }
