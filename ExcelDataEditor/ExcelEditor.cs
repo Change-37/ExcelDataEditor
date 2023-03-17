@@ -14,7 +14,7 @@ namespace ExcelDataEditor
 {
     internal class ExcelEditor
     {
-        public static void Createfile(string name, string path)
+        public static void CreateFile(string name, string path)
         {
             if (name.Length <= 0) name = DateTime.Now.ToString();
             if (path == "") path = "C:\\Users\\SW2137\\Desktop";
@@ -39,7 +39,7 @@ namespace ExcelDataEditor
                 Marshal.ReleaseComObject(application); // Close(), Quit()으로 종료되지 않은 프로세스까지 종료
             }
         }
-        public static void Editfile(string path)
+        public static void EditAreaFile(string path)
         {
             try
             {
@@ -69,6 +69,12 @@ namespace ExcelDataEditor
                 Marshal.ReleaseComObject(application); // Close(), Quit()으로 종료되지 않은 프로세스까지 종료
             }
         }
+
+        public static void MoveAreaFile(string path)
+        {
+
+        }
+
         protected static Workbook workbook;
         protected static Worksheet worksheet;
         protected static Application application;

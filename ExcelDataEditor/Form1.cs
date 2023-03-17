@@ -24,7 +24,7 @@ namespace ExcelDataEditor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ExcelEditor.Createfile(nameNew.Text, pathNew.Text);
+            ExcelEditor.CreateFile(nameNew.Text, pathNew.Text);
         }
 
         private void groupBox1_DragDrop(object sender, DragEventArgs e)
@@ -64,7 +64,7 @@ namespace ExcelDataEditor
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ExcelEditor.Editfile(pathEdit.Text);
+            ExcelEditor.EditAreaFile(pathEdit.Text);
         }
     }
 }
