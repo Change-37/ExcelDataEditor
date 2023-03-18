@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,12 +39,12 @@
             this.nameNew = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pathEdit = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -79,6 +80,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "파일신규생성";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("나눔고딕", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Location = new System.Drawing.Point(299, 236);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(304, 156);
+            this.textBox1.TabIndex = 12;
             // 
             // groupBox1
             // 
@@ -151,6 +162,7 @@
             // tabPage2
             // 
             this.tabPage2.AllowDrop = true;
+            this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.pathEdit);
@@ -162,6 +174,34 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "파일수정";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("나눔고딕", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.Location = new System.Drawing.Point(609, 308);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(152, 84);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "파일 생성";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("나눔고딕", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(227, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 15);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "파일 경로";
+            // 
+            // pathEdit
+            // 
+            this.pathEdit.Location = new System.Drawing.Point(296, 79);
+            this.pathEdit.Name = "pathEdit";
+            this.pathEdit.Size = new System.Drawing.Size(266, 22);
+            this.pathEdit.TabIndex = 15;
             // 
             // groupBox2
             // 
@@ -185,43 +225,12 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "폴더 드래그";
             // 
-            // label5
+            // textBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("나눔고딕", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(227, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 15);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "파일 경로";
-            // 
-            // pathEdit
-            // 
-            this.pathEdit.Location = new System.Drawing.Point(296, 79);
-            this.pathEdit.Name = "pathEdit";
-            this.pathEdit.Size = new System.Drawing.Size(266, 22);
-            this.pathEdit.TabIndex = 15;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("나눔고딕", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(609, 308);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(152, 84);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "파일 생성";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("나눔고딕", 8.830189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(299, 236);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(304, 156);
-            this.textBox1.TabIndex = 12;
+            this.textBox2.Location = new System.Drawing.Point(296, 144);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(266, 22);
+            this.textBox2.TabIndex = 18;
             // 
             // Form1
             // 
@@ -263,6 +272,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox pathEdit;
         public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
