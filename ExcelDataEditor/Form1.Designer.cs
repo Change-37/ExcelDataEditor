@@ -39,12 +39,12 @@
             this.nameNew = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pathEdit = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -175,6 +175,13 @@
             this.tabPage2.Text = "파일수정";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(296, 123);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(266, 22);
+            this.textBox2.TabIndex = 18;
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("나눔고딕", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -224,13 +231,6 @@
             this.label4.Size = new System.Drawing.Size(82, 16);
             this.label4.TabIndex = 0;
             this.label4.Text = "폴더 드래그";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(296, 144);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 22);
-            this.textBox2.TabIndex = 18;
             // 
             // Form1
             // 
