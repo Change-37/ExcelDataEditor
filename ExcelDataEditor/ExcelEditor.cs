@@ -17,7 +17,6 @@ namespace ExcelDataEditor
         public static void CreateFile(string name, string path)
         {
             if (name.Length <= 0) name = DateTime.Now.ToString();
-            if (path == "") path = "C:\\Users\\SW2137\\Desktop";
             string filename = path + "\\" + name + ".xlsx";
             try
             {
@@ -30,6 +29,7 @@ namespace ExcelDataEditor
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
+                throw ex;
             }
             finally
             {
@@ -70,9 +70,12 @@ namespace ExcelDataEditor
             }
         }
 
-        public static void MoveAreaFile(string path)
+        public static string MoveAreaFile(string path)
         {
-
+            string word = "A11";
+            int num1 = word[0];
+            int num2 = word[1] + word[2];
+            return (num1+' '+num2).ToString();
         }
 
         protected static Workbook workbook;
