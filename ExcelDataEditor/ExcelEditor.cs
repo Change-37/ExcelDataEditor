@@ -75,7 +75,9 @@ namespace ExcelDataEditor
             string word = "A11";
             int num1 = word[0];
             int num2 = word[1] + word[2];
-            return (num1+' '+num2).ToString();
+            string result = num1.ToString() + num2.ToString();
+            return result;
+
         }
 
         protected static Workbook workbook;
